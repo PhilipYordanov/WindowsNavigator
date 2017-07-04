@@ -5,6 +5,10 @@
 
     public class WindowsNavigatorDbContext : DbContext
     {
+        public WindowsNavigatorDbContext() : base("WindowsNavigatorConnString")
+        {
+
+        }
         public DbSet<ButtonProp> ButtonProp { get; set; }
     }
 }

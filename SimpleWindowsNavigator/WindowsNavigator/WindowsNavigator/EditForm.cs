@@ -20,7 +20,7 @@
 
         private void EditForm_Load(object sender, EventArgs e)
         {
-            this.buttonPropsTableAdapter.Fill(this._WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.ButtonProps);
+           this.buttonPropsTableAdapter1.Fill(this.windowsNavigatorConnStringDataSet.ButtonProps);
         }
 
         private void ButtonsGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
@@ -28,8 +28,8 @@
             try
             {
                 this.Validate();
-                this.buttonPropsBindingSource.EndEdit();
-                this.buttonPropsTableAdapter.Update(this._WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.ButtonProps);
+                this.buttonPropsBindingSource1.EndEdit();
+                this.buttonPropsTableAdapter1.Update(this.windowsNavigatorConnStringDataSet.ButtonProps);
                 MessageBox.Show("updates were made successful", "Update Info");
             }
             catch (Exception)

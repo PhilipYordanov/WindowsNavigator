@@ -1,5 +1,6 @@
 ﻿namespace WindowsNavigator
 {
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Windows.Forms;
     using WindowsNavigator.Data;
@@ -11,9 +12,10 @@
         {
             using (var db = new WindowsNavigatorDbContext())
             {
-                if (!Database.Exists(@"Data Source=DESKTOP-52UDVT7\SQLEXPRESS;Initial Catalog=WindowsNavigator.Data.WindowsNavigatorDbContext;Integrated Security=True"))
+                if (!Database.Exists(@"Data Source=DESKTOP-52UDVT7\SQLEXPRESS;Initial Catalog=WindowsNavigatorConnString;Integrated Security=True"))
                 {
-                    var button = new ButtonProp(1, "Test", "Test", "Test");
+                    var button = new ButtonProp(1, "test", "test", "test");
+
                     db.ButtonProp.Add(button);
                     db.SaveChanges();
                 }

@@ -44,5 +44,16 @@ namespace WindowsNavigator.Properties {
                 return ((string)(this["WindowsNavigator_Data_WindowsNavigatorDbContextConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-52UDVT7\\SQLEXPRESS;Initial Catalog=WindowsNavigatorConnString" +
+            ";Integrated Security=True")]
+        public string WindowsNavigatorConnStringConnectionString {
+            get {
+                return ((string)(this["WindowsNavigatorConnStringConnectionString"]));
+            }
+        }
     }
 }

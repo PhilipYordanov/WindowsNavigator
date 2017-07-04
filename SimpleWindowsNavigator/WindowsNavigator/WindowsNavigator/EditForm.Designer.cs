@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ButtonsGridView = new System.Windows.Forms.DataGridView();
+            this.windowsNavigatorConnStringDataSet = new WindowsNavigator.WindowsNavigatorConnStringDataSet();
+            this.windowsNavigatorConnStringDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonPropsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonPropsTableAdapter1 = new WindowsNavigator.WindowsNavigatorConnStringDataSetTableAdapters.ButtonPropsTableAdapter();
             this.textDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.linkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonPropsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.windowsNavigatorDataWindowsNavigatorDbContextDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._WindowsNavigator_Data_WindowsNavigatorDbContextDataSet = new WindowsNavigator._WindowsNavigator_Data_WindowsNavigatorDbContextDataSet();
-            this.buttonPropsTableAdapter = new WindowsNavigator._WindowsNavigator_Data_WindowsNavigatorDbContextDataSetTableAdapters.ButtonPropsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonsGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonPropsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.windowsNavigatorDataWindowsNavigatorDbContextDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._WindowsNavigator_Data_WindowsNavigatorDbContextDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.windowsNavigatorConnStringDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.windowsNavigatorConnStringDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonPropsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonsGridView
@@ -53,7 +53,7 @@
             this.textDataGridViewTextBoxColumn,
             this.linkDataGridViewTextBoxColumn,
             this.colorDataGridViewTextBoxColumn});
-            this.ButtonsGridView.DataSource = this.buttonPropsBindingSource;
+            this.ButtonsGridView.DataSource = this.buttonPropsBindingSource1;
             this.ButtonsGridView.Location = new System.Drawing.Point(102, 127);
             this.ButtonsGridView.Name = "ButtonsGridView";
             this.ButtonsGridView.RowTemplate.Height = 24;
@@ -61,47 +61,43 @@
             this.ButtonsGridView.TabIndex = 0;
             this.ButtonsGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.ButtonsGridView_CellEndEdit);
             // 
+            // windowsNavigatorConnStringDataSet
+            // 
+            this.windowsNavigatorConnStringDataSet.DataSetName = "WindowsNavigatorConnStringDataSet";
+            this.windowsNavigatorConnStringDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // windowsNavigatorConnStringDataSetBindingSource
+            // 
+            this.windowsNavigatorConnStringDataSetBindingSource.DataSource = this.windowsNavigatorConnStringDataSet;
+            this.windowsNavigatorConnStringDataSetBindingSource.Position = 0;
+            // 
+            // buttonPropsBindingSource1
+            // 
+            this.buttonPropsBindingSource1.DataMember = "ButtonProps";
+            this.buttonPropsBindingSource1.DataSource = this.windowsNavigatorConnStringDataSet;
+            // 
+            // buttonPropsTableAdapter1
+            // 
+            this.buttonPropsTableAdapter1.ClearBeforeFill = true;
+            // 
             // textDataGridViewTextBoxColumn
             // 
             this.textDataGridViewTextBoxColumn.DataPropertyName = "Text";
-            this.textDataGridViewTextBoxColumn.HeaderText = "Button name";
+            this.textDataGridViewTextBoxColumn.HeaderText = "Button Text";
             this.textDataGridViewTextBoxColumn.Name = "textDataGridViewTextBoxColumn";
-            this.textDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // linkDataGridViewTextBoxColumn
             // 
             this.linkDataGridViewTextBoxColumn.DataPropertyName = "Link";
-            this.linkDataGridViewTextBoxColumn.FillWeight = 200F;
-            this.linkDataGridViewTextBoxColumn.HeaderText = "URL";
+            this.linkDataGridViewTextBoxColumn.HeaderText = "Button URL/Path";
             this.linkDataGridViewTextBoxColumn.Name = "linkDataGridViewTextBoxColumn";
-            this.linkDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.linkDataGridViewTextBoxColumn.Width = 350;
             // 
             // colorDataGridViewTextBoxColumn
             // 
             this.colorDataGridViewTextBoxColumn.DataPropertyName = "Color";
-            this.colorDataGridViewTextBoxColumn.HeaderText = "Color From Argb";
+            this.colorDataGridViewTextBoxColumn.HeaderText = "ButtonColor from argb";
             this.colorDataGridViewTextBoxColumn.Name = "colorDataGridViewTextBoxColumn";
-            this.colorDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // buttonPropsBindingSource
-            // 
-            this.buttonPropsBindingSource.DataMember = "ButtonProps";
-            this.buttonPropsBindingSource.DataSource = this.windowsNavigatorDataWindowsNavigatorDbContextDataSetBindingSource;
-            // 
-            // windowsNavigatorDataWindowsNavigatorDbContextDataSetBindingSource
-            // 
-            this.windowsNavigatorDataWindowsNavigatorDbContextDataSetBindingSource.DataSource = this._WindowsNavigator_Data_WindowsNavigatorDbContextDataSet;
-            this.windowsNavigatorDataWindowsNavigatorDbContextDataSetBindingSource.Position = 0;
-            // 
-            // _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet
-            // 
-            this._WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.DataSetName = "_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet";
-            this._WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // buttonPropsTableAdapter
-            // 
-            this.buttonPropsTableAdapter.ClearBeforeFill = true;
             // 
             // EditForm
             // 
@@ -118,9 +114,9 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditForm_FormClosed);
             this.Load += new System.EventHandler(this.EditForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ButtonsGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonPropsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.windowsNavigatorDataWindowsNavigatorDbContextDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._WindowsNavigator_Data_WindowsNavigatorDbContextDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.windowsNavigatorConnStringDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.windowsNavigatorConnStringDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonPropsBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -128,10 +124,10 @@
         #endregion
 
         private System.Windows.Forms.DataGridView ButtonsGridView;
-        private System.Windows.Forms.BindingSource windowsNavigatorDataWindowsNavigatorDbContextDataSetBindingSource;
-        private _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet;
-        private System.Windows.Forms.BindingSource buttonPropsBindingSource;
-        private _WindowsNavigator_Data_WindowsNavigatorDbContextDataSetTableAdapters.ButtonPropsTableAdapter buttonPropsTableAdapter;
+        private System.Windows.Forms.BindingSource windowsNavigatorConnStringDataSetBindingSource;
+        private WindowsNavigatorConnStringDataSet windowsNavigatorConnStringDataSet;
+        private System.Windows.Forms.BindingSource buttonPropsBindingSource1;
+        private WindowsNavigatorConnStringDataSetTableAdapters.ButtonPropsTableAdapter buttonPropsTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn textDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn linkDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn colorDataGridViewTextBoxColumn;

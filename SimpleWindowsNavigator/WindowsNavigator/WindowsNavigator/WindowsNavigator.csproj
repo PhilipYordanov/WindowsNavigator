@@ -89,10 +89,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.Designer.cs">
+    <Compile Include="WindowsNavigatorConnStringDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.xsd</DependentUpon>
+      <DependentUpon>WindowsNavigatorConnStringDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="EditForm.resx">
       <DependentUpon>EditForm.cs</DependentUpon>
@@ -120,16 +120,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.xsc">
-      <DependentUpon>_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.xsd</DependentUpon>
+    <None Include="WindowsNavigatorConnStringDataSet.xsc">
+      <DependentUpon>WindowsNavigatorConnStringDataSet.xsd</DependentUpon>
     </None>
-    <None Include="_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.xsd">
+    <None Include="WindowsNavigatorConnStringDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>WindowsNavigatorConnStringDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.xss">
-      <DependentUpon>_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.xsd</DependentUpon>
+    <None Include="WindowsNavigatorConnStringDataSet.xss">
+      <DependentUpon>WindowsNavigatorConnStringDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

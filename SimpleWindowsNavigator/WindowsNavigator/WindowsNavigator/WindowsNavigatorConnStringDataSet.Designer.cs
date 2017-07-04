@@ -20,9 +20,9 @@ namespace WindowsNavigator {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("WindowsNavigatorConnStringDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet : global::System.Data.DataSet {
+    public partial class WindowsNavigatorConnStringDataSet : global::System.Data.DataSet {
         
         private @__MigrationHistoryDataTable table__MigrationHistory;
         
@@ -32,7 +32,7 @@ namespace WindowsNavigator {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet() {
+        public WindowsNavigatorConnStringDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +43,7 @@ namespace WindowsNavigator {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected WindowsNavigatorConnStringDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -142,7 +142,7 @@ namespace WindowsNavigator {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet cln = ((_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet)(base.Clone()));
+            WindowsNavigatorConnStringDataSet cln = ((WindowsNavigatorConnStringDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -223,9 +223,9 @@ namespace WindowsNavigator {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet";
+            this.DataSetName = "WindowsNavigatorConnStringDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.xsd";
+            this.Namespace = "http://tempuri.org/WindowsNavigatorConnStringDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.table__MigrationHistory = new @__MigrationHistoryDataTable();
@@ -257,7 +257,7 @@ namespace WindowsNavigator {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet ds = new _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet();
+            WindowsNavigatorConnStringDataSet ds = new WindowsNavigatorConnStringDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -555,7 +555,7 @@ namespace WindowsNavigator {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet ds = new _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet();
+                WindowsNavigatorConnStringDataSet ds = new WindowsNavigatorConnStringDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -862,7 +862,7 @@ namespace WindowsNavigator {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet ds = new _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet();
+                WindowsNavigatorConnStringDataSet ds = new WindowsNavigatorConnStringDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1159,7 +1159,7 @@ namespace WindowsNavigator {
         }
     }
 }
-namespace WindowsNavigator._WindowsNavigator_Data_WindowsNavigatorDbContextDataSetTableAdapters {
+namespace WindowsNavigator.WindowsNavigatorConnStringDataSetTableAdapters {
     
     
     /// <summary>
@@ -1324,7 +1324,7 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsNavigator.Properties.Settings.Default.WindowsNavigator_Data_WindowsNavigatorDbContextConnectionString;
+            this._connection.ConnectionString = global::WindowsNavigator.Properties.Settings.Default.WindowsNavigatorConnStringConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1342,7 +1342,7 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.@__MigrationHistoryDataTable dataTable) {
+        public virtual int Fill(WindowsNavigatorConnStringDataSet.@__MigrationHistoryDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1355,9 +1355,9 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.@__MigrationHistoryDataTable GetData() {
+        public virtual WindowsNavigatorConnStringDataSet.@__MigrationHistoryDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.@__MigrationHistoryDataTable dataTable = new _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.@__MigrationHistoryDataTable();
+            WindowsNavigatorConnStringDataSet.@__MigrationHistoryDataTable dataTable = new WindowsNavigatorConnStringDataSet.@__MigrationHistoryDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1365,14 +1365,14 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.@__MigrationHistoryDataTable dataTable) {
+        public virtual int Update(WindowsNavigatorConnStringDataSet.@__MigrationHistoryDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet dataSet) {
+        public virtual int Update(WindowsNavigatorConnStringDataSet dataSet) {
             return this.Adapter.Update(dataSet, "__MigrationHistory");
         }
         
@@ -1704,7 +1704,7 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsNavigator.Properties.Settings.Default.WindowsNavigator_Data_WindowsNavigatorDbContextConnectionString;
+            this._connection.ConnectionString = global::WindowsNavigator.Properties.Settings.Default.WindowsNavigatorConnStringConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1721,7 +1721,7 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.ButtonPropsDataTable dataTable) {
+        public virtual int Fill(WindowsNavigatorConnStringDataSet.ButtonPropsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1734,9 +1734,9 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.ButtonPropsDataTable GetData() {
+        public virtual WindowsNavigatorConnStringDataSet.ButtonPropsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.ButtonPropsDataTable dataTable = new _WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.ButtonPropsDataTable();
+            WindowsNavigatorConnStringDataSet.ButtonPropsDataTable dataTable = new WindowsNavigatorConnStringDataSet.ButtonPropsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1744,14 +1744,14 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet.ButtonPropsDataTable dataTable) {
+        public virtual int Update(WindowsNavigatorConnStringDataSet.ButtonPropsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet dataSet) {
+        public virtual int Update(WindowsNavigatorConnStringDataSet dataSet) {
             return this.Adapter.Update(dataSet, "ButtonProps");
         }
         
@@ -1995,7 +1995,7 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(WindowsNavigatorConnStringDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this.___MigrationHistoryTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.@__MigrationHistory.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -2023,7 +2023,7 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(WindowsNavigatorConnStringDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this.___MigrationHistoryTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.@__MigrationHistory.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -2049,7 +2049,7 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(WindowsNavigatorConnStringDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._buttonPropsTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.ButtonProps.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -2099,7 +2099,7 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(_WindowsNavigator_Data_WindowsNavigatorDbContextDataSet dataSet) {
+        public virtual int UpdateAll(WindowsNavigatorConnStringDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
