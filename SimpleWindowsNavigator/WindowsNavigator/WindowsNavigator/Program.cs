@@ -1,6 +1,5 @@
 ﻿namespace WindowsNavigator
 {
-    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Windows.Forms;
     using WindowsNavigator.Data;

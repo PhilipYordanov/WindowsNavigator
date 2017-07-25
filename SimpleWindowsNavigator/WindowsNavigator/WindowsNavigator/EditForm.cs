@@ -5,12 +5,12 @@
 
     public partial class EditForm : Form
     {
+        private Form mainForm;
+
         public EditForm()
         {
             this.InitializeComponent();
         }
-
-        private Form mainForm;
 
         public EditForm(MainForm mainForm)
         {

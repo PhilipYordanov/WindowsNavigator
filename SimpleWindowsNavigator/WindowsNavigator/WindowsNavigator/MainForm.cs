@@ -31,7 +31,6 @@
         {
             this.InitializeComponent();
 
-            // TODO: Ask Value if that's the right way to extract data from DbContext
             // read data from Database
             using (SqlConnection sqlConn = new SqlConnection(@"Data Source=DESKTOP-52UDVT7\SQLEXPRESS;
                                        Initial Catalog=WindowsNavigatorConnString;
